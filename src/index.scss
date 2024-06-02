@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.App {
+  padding: 100px 100px 100px 100px;
+  h1 {
+    color: #111311;
+  }
+}
+.test_header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .timer {
+    border: #777 1px solid;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin-top: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    span {
+      color: #777;
+    }
+  }
+}
+.test_navigation {
+  display: flex;
+  gap: 5px;
+  .navigation_item-active,
+  .navigation_item-checked,
+  .navigation_item {
+    padding-left: 60px;
+    padding-top: 7px;
+    cursor: pointer;
+  }
+  .navigation_item-active {
+    width: 20px;
+    height: 5px;
+    background-color: red;
+  }
+  .navigation_item-checked {
+    width: 20px;
+    height: 5px;
+    background-color: black;
+  }
+  .navigation_item {
+    width: 20px;
+    height: 5px;
+    background-color: #777;
+  }
+}
+.question_view,
+.submit_view {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  .answer_field {
+    margin-top: 10px;
+  }
+  textarea {
+    width: 100%;
+    max-width: 400px;
+    border: 1px black solid;
+    outline: none;
+    resize: vertical;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    padding: 10px 10px 10px 10px;
+  }
+  .text-input {
+    width: 100%;
+    max-width: 400px;
+    border: 1px black solid;
+    outline: none;
+    resize: vertical;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    padding: 10px 10px 10px 10px;
+  }
+  textarea:focus,
+  .text-input:focus {
+    border: 1px solid red;
+  }
+  .choices_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+  }
+  input[type="radio"] {
+    width: 30px;
+    height: 30px;
+  }
+  label {
+    margin-left: 10px;
+  }
+  .answer_confirm_button {
+    margin-top: 30px;
+    border-radius: 5px;
+    max-width: 200px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 30px 10px 30px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+  }
+}
+.test-results_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  .question_result {
+    padding: 10px;
+    border: 1px red solid;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
